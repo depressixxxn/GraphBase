@@ -84,7 +84,7 @@ CREATE TABLE Signs AS EDGE;
 
 CREATE TABLE Formalize AS EDGE;
 
-CREATE TABLE Ñooperates AS EDGE;
+CREATE TABLE Ð¡ooperates AS EDGE;
 
 ALTER TABLE LivesIn
 ADD CONSTRAINT EC_LivesIn CONNECTION (Client TO City)
@@ -98,168 +98,168 @@ ADD CONSTRAINT EC_Signs CONNECTION (Client TO Loan)
 ALTER TABLE Formalize
 ADD CONSTRAINT EC_Formalize CONNECTION (Employee TO Loan)
 
-ALTER TABLE Ñooperates
-ADD CONSTRAINT EC_Ñooperates CONNECTION (Bank TO Bank)
+ALTER TABLE Ð¡ooperates
+ADD CONSTRAINT EC_Ð¡ooperates CONNECTION (Bank TO Bank)
 
 Insert into Client(Name,Patronymic, Surname, Telephone, Address, Salary, NameOwnership,OwnershipType, ContactPerson)
-Values ('Ïîëèíà', 'Èëüèíè÷íà', 'Ãîðøêîâà','+375(44)245-27-87', 'Ïóøêèíñêèé Ïð., äîì 38, êâ. 48', 1450, 'Ðåñòîðàí "×åòûðå ñåçîíà"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Øèðîêîâà Ê.Ê.'),
-( 'Åëèçàâåòà', 'Ìèõàéëîâíà', 'Ãðèøèíà','+375(33)220-95-58', 'Ïîíîìàðåâà Óë., äîì 3, êâ. 63', 1000, 'Ôàáðèêà "Òåêñòèëü"','Ïðîèçâîäñòâåííàÿ ñîáñòâåííîñòü', 'Åìåëüÿíîâ À.Á.' ),
-('Âèêòîð', 'Àëåêñàíäðîâè÷', 'Ðîäèîíîâ','+375(29)555-93-03', 'Ëåñíîé Ïîñ., äîì 6, êâ. 64', 2450, 'Øêîëà èñêóññòâ "Ìàñòåðñêàÿ"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Øèðîêîâà Ä.Ô.' ),
-('Àðèíà', 'Ëåîíèäîâíà', 'Øèðîêîâà','+375(44)131-07-88', 'Êîðîëåâà Óë., äîì 33, êâ. 75', 600, 'Êîôåéíÿ "Espresso"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Ãðèøèíà Â.Ï.' ),
-('Ñåðãåé', 'Àðñåíüåâè÷', 'Íîâèêîâ','+375(29)342-96-96', 'Ôðîëåíêîâà Óë., äîì 54, êâ. 51', 567, 'Êíèæíûé ìàãàçèí "Êíèãè"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Åìåëüÿíîâ È.Í.' ),
-('Ìèðîí', 'Ñåðãååâè÷', 'Ðóñàíîâ','+375(44)163-46-48', 'Êîçëîâà Óë., äîì 31, êâ. 153', 5000, 'Ìóçûêàëüíûé ëåéáë "Ìåëîäèÿ"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Øèðÿåâ Å.Í.' ),
-('Ëåâ', 'Àíäðååâè÷', 'Êîçûðåâ','+375(29)220-00-79', 'Íåæíîâà Óë., äîì 6, êâ. 109', 666, 'Òåàòð "Äðàìà"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Ãðèøèíà Í.À.' ),
-('Ñòàíèñëàâ', 'Äàíèèëîâè÷', 'Âîëêîâ','+375(29)563-37-06', 'Íåæíîâà Óë., äîì 6, êâ. 107', 1340, 'Çàâîä "Ïðîãðåññ"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Øèðÿåâà Å.Ó.' ),
-('Âèêòîðèÿ','Àëåêñàíäðîâíà', 'Áûêîâà','+375(44)258-60-01', 'Êîøåâîãî Óë., äîì 101', 1486, 'Êâàðòèðà','Íåäâèæèìîñòü', 'Åìåëüÿíîâ Å.Ì.' ),
-('Âàëåðèÿ', 'Àëèåâíà', 'Àíòîíîâà','+375(33)201-60-75 ', 'Êîøåâîãî Óë., äîì 72', 900, 'Òîðãîâûé öåíòð "Ìåãàïîëèñ"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Øèðÿåâ Å.Í.' ),
-('Êèðèëë', 'Ïëàòîíîâè÷', 'Åìåëüÿíîâ','+375(29)274-44-70', 'Óëüÿíîâñêàÿ Óë., äîì 49, êâ. 52', 2020, 'Çàâîäñêîå îáîðóäîâàíèå "ÑÒÀÍ"','Ïðîèçâîäñòâåííîå èìóùåñòâî', 'Ãðèøèíà Å.Ì.' ),
-('Àëåêñàíäðà', 'Èâàíîâíà', 'Ãîðþíîâà','+375(33)252-73-70', 'Óëüÿíîâñêàÿ Óë., äîì 49, êâ. 71', 456, 'Çåìåëüíûé ó÷àñòîê ïîä ñòðîèòåëüñòâî','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Ìîðîç Ó.Ê.' ),
-('Ìèëàíà', 'Ëüâîâè÷', 'Ïîïîâà','+375(44)223-15-20', 'Øìèäòà Ïð., äîì 48, êâ. 46', 1111, 'Ñïîðòèâíûé êîìïëåêñ "Îëèìï"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Ìîðîçîâà Å.Ì.' ),
-('Ëåîíèä', 'Àðò¸ìîâè÷', 'Øèðÿåâ','+375(44)552-44-82', 'Îðëîâñêîãî Óë., äîì 14, êâ. 88', 2340, 'Ðåñòîðàí "Èòàëüÿíñêîå íàñòðîåíèå"','Êîììåð÷åñêàÿ ñîáñòâåííîñòü', 'Âàñèëüåâ À.À.' ),
-('Äìèòðèé', 'Ìàðêîâè÷', 'Ôåäîòîâ','+375(44)333-36-75', 'Îðëîâñêîãî Óë., äîì 14, êâ. 76', 2569, 'Ñóïåðìàðêåò "Ìàãíèò"','Êîììåð÷åñêàÿ ñîáñòâåííîñòü', 'Ìîðîçîâ Ó.Â.' ),
-('Âàðâàðà', 'Êîíñòàíòèíîâíà', 'Ìîðîçîâà','+375(29)173-16-05', 'Çûãèíà Óë., äîì 2/À', 3000, 'Ëåñíîé ìàññèâ "Áåðåçîâàÿ ðîùà"','Êîììåð÷åñêàÿ íåäâèæèìîñòü', 'Âàñèëüåâ Ê.È.' ),
-('Èëüÿ', 'Àðò¸ìîâè÷', 'Âàñèëüåâ','+375(33)228-97-33', 'Íàðîäíàÿ Óë., äîì 14, êâ. 75', 2395, 'Òåííèñíûé êëóá "Ñïîðòìàñòåð"','Êîììåð÷åñêàÿ ñîáñòâåííîñòü', 'Ìîðîçîâà Å.Ê.' )
+Values ('ÐŸÐ¾Ð»Ð¸Ð½Ð°', 'Ð˜Ð»ÑŒÐ¸Ð½Ð¸Ñ‡Ð½Ð°', 'Ð“Ð¾Ñ€ÑˆÐºÐ¾Ð²Ð°','+375(44)245-27-87', 'ÐŸÑƒÑˆÐºÐ¸Ð½ÑÐºÐ¸Ð¹ ÐŸÑ€., Ð´Ð¾Ð¼ 38, ÐºÐ². 48', 1450, 'Ð ÐµÑÑ‚Ð¾Ñ€Ð°Ð½ "Ð§ÐµÑ‚Ñ‹Ñ€Ðµ ÑÐµÐ·Ð¾Ð½Ð°"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð¨Ð¸Ñ€Ð¾ÐºÐ¾Ð²Ð° Ðš.Ðš.'),
+( 'Ð•Ð»Ð¸Ð·Ð°Ð²ÐµÑ‚Ð°', 'ÐœÐ¸Ñ…Ð°Ð¹Ð»Ð¾Ð²Ð½Ð°', 'Ð“Ñ€Ð¸ÑˆÐ¸Ð½Ð°','+375(33)220-95-58', 'ÐŸÐ¾Ð½Ð¾Ð¼Ð°Ñ€ÐµÐ²Ð° Ð£Ð»., Ð´Ð¾Ð¼ 3, ÐºÐ². 63', 1000, 'Ð¤Ð°Ð±Ñ€Ð¸ÐºÐ° "Ð¢ÐµÐºÑÑ‚Ð¸Ð»ÑŒ"','ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ð°Ñ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ', 'Ð•Ð¼ÐµÐ»ÑŒÑÐ½Ð¾Ð² Ð.Ð‘.' ),
+('Ð’Ð¸ÐºÑ‚Ð¾Ñ€', 'ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð¾Ð²Ð¸Ñ‡', 'Ð Ð¾Ð´Ð¸Ð¾Ð½Ð¾Ð²','+375(29)555-93-03', 'Ð›ÐµÑÐ½Ð¾Ð¹ ÐŸÐ¾Ñ., Ð´Ð¾Ð¼ 6, ÐºÐ². 64', 2450, 'Ð¨ÐºÐ¾Ð»Ð° Ð¸ÑÐºÑƒÑÑÑ‚Ð² "ÐœÐ°ÑÑ‚ÐµÑ€ÑÐºÐ°Ñ"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð¨Ð¸Ñ€Ð¾ÐºÐ¾Ð²Ð° Ð”.Ð¤.' ),
+('ÐÑ€Ð¸Ð½Ð°', 'Ð›ÐµÐ¾Ð½Ð¸Ð´Ð¾Ð²Ð½Ð°', 'Ð¨Ð¸Ñ€Ð¾ÐºÐ¾Ð²Ð°','+375(44)131-07-88', 'ÐšÐ¾Ñ€Ð¾Ð»ÐµÐ²Ð° Ð£Ð»., Ð´Ð¾Ð¼ 33, ÐºÐ². 75', 600, 'ÐšÐ¾Ñ„ÐµÐ¹Ð½Ñ "Espresso"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð“Ñ€Ð¸ÑˆÐ¸Ð½Ð° Ð’.ÐŸ.' ),
+('Ð¡ÐµÑ€Ð³ÐµÐ¹', 'ÐÑ€ÑÐµÐ½ÑŒÐµÐ²Ð¸Ñ‡', 'ÐÐ¾Ð²Ð¸ÐºÐ¾Ð²','+375(29)342-96-96', 'Ð¤Ñ€Ð¾Ð»ÐµÐ½ÐºÐ¾Ð²Ð° Ð£Ð»., Ð´Ð¾Ð¼ 54, ÐºÐ². 51', 567, 'ÐšÐ½Ð¸Ð¶Ð½Ñ‹Ð¹ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ "ÐšÐ½Ð¸Ð³Ð¸"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð•Ð¼ÐµÐ»ÑŒÑÐ½Ð¾Ð² Ð˜.Ð.' ),
+('ÐœÐ¸Ñ€Ð¾Ð½', 'Ð¡ÐµÑ€Ð³ÐµÐµÐ²Ð¸Ñ‡', 'Ð ÑƒÑÐ°Ð½Ð¾Ð²','+375(44)163-46-48', 'ÐšÐ¾Ð·Ð»Ð¾Ð²Ð° Ð£Ð»., Ð´Ð¾Ð¼ 31, ÐºÐ². 153', 5000, 'ÐœÑƒÐ·Ñ‹ÐºÐ°Ð»ÑŒÐ½Ñ‹Ð¹ Ð»ÐµÐ¹Ð±Ð» "ÐœÐµÐ»Ð¾Ð´Ð¸Ñ"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð¨Ð¸Ñ€ÑÐµÐ² Ð•.Ð.' ),
+('Ð›ÐµÐ²', 'ÐÐ½Ð´Ñ€ÐµÐµÐ²Ð¸Ñ‡', 'ÐšÐ¾Ð·Ñ‹Ñ€ÐµÐ²','+375(29)220-00-79', 'ÐÐµÐ¶Ð½Ð¾Ð²Ð° Ð£Ð»., Ð´Ð¾Ð¼ 6, ÐºÐ². 109', 666, 'Ð¢ÐµÐ°Ñ‚Ñ€ "Ð”Ñ€Ð°Ð¼Ð°"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð“Ñ€Ð¸ÑˆÐ¸Ð½Ð° Ð.Ð.' ),
+('Ð¡Ñ‚Ð°Ð½Ð¸ÑÐ»Ð°Ð²', 'Ð”Ð°Ð½Ð¸Ð¸Ð»Ð¾Ð²Ð¸Ñ‡', 'Ð’Ð¾Ð»ÐºÐ¾Ð²','+375(29)563-37-06', 'ÐÐµÐ¶Ð½Ð¾Ð²Ð° Ð£Ð»., Ð´Ð¾Ð¼ 6, ÐºÐ². 107', 1340, 'Ð—Ð°Ð²Ð¾Ð´ "ÐŸÑ€Ð¾Ð³Ñ€ÐµÑÑ"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð¨Ð¸Ñ€ÑÐµÐ²Ð° Ð•.Ð£.' ),
+('Ð’Ð¸ÐºÑ‚Ð¾Ñ€Ð¸Ñ','ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð¾Ð²Ð½Ð°', 'Ð‘Ñ‹ÐºÐ¾Ð²Ð°','+375(44)258-60-01', 'ÐšÐ¾ÑˆÐµÐ²Ð¾Ð³Ð¾ Ð£Ð»., Ð´Ð¾Ð¼ 101', 1486, 'ÐšÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ð°','ÐÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð•Ð¼ÐµÐ»ÑŒÑÐ½Ð¾Ð² Ð•.Ðœ.' ),
+('Ð’Ð°Ð»ÐµÑ€Ð¸Ñ', 'ÐÐ»Ð¸ÐµÐ²Ð½Ð°', 'ÐÐ½Ñ‚Ð¾Ð½Ð¾Ð²Ð°','+375(33)201-60-75 ', 'ÐšÐ¾ÑˆÐµÐ²Ð¾Ð³Ð¾ Ð£Ð»., Ð´Ð¾Ð¼ 72', 900, 'Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ð¹ Ñ†ÐµÐ½Ñ‚Ñ€ "ÐœÐµÐ³Ð°Ð¿Ð¾Ð»Ð¸Ñ"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð¨Ð¸Ñ€ÑÐµÐ² Ð•.Ð.' ),
+('ÐšÐ¸Ñ€Ð¸Ð»Ð»', 'ÐŸÐ»Ð°Ñ‚Ð¾Ð½Ð¾Ð²Ð¸Ñ‡', 'Ð•Ð¼ÐµÐ»ÑŒÑÐ½Ð¾Ð²','+375(29)274-44-70', 'Ð£Ð»ÑŒÑÐ½Ð¾Ð²ÑÐºÐ°Ñ Ð£Ð»., Ð´Ð¾Ð¼ 49, ÐºÐ². 52', 2020, 'Ð—Ð°Ð²Ð¾Ð´ÑÐºÐ¾Ðµ Ð¾Ð±Ð¾Ñ€ÑƒÐ´Ð¾Ð²Ð°Ð½Ð¸Ðµ "Ð¡Ð¢ÐÐ"','ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ Ð¸Ð¼ÑƒÑ‰ÐµÑÑ‚Ð²Ð¾', 'Ð“Ñ€Ð¸ÑˆÐ¸Ð½Ð° Ð•.Ðœ.' ),
+('ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð°', 'Ð˜Ð²Ð°Ð½Ð¾Ð²Ð½Ð°', 'Ð“Ð¾Ñ€ÑŽÐ½Ð¾Ð²Ð°','+375(33)252-73-70', 'Ð£Ð»ÑŒÑÐ½Ð¾Ð²ÑÐºÐ°Ñ Ð£Ð»., Ð´Ð¾Ð¼ 49, ÐºÐ². 71', 456, 'Ð—ÐµÐ¼ÐµÐ»ÑŒÐ½Ñ‹Ð¹ ÑƒÑ‡Ð°ÑÑ‚Ð¾Ðº Ð¿Ð¾Ð´ ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'ÐœÐ¾Ñ€Ð¾Ð· Ð£.Ðš.' ),
+('ÐœÐ¸Ð»Ð°Ð½Ð°', 'Ð›ÑŒÐ²Ð¾Ð²Ð¸Ñ‡', 'ÐŸÐ¾Ð¿Ð¾Ð²Ð°','+375(44)223-15-20', 'Ð¨Ð¼Ð¸Ð´Ñ‚Ð° ÐŸÑ€., Ð´Ð¾Ð¼ 48, ÐºÐ². 46', 1111, 'Ð¡Ð¿Ð¾Ñ€Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑ "ÐžÐ»Ð¸Ð¼Ð¿"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'ÐœÐ¾Ñ€Ð¾Ð·Ð¾Ð²Ð° Ð•.Ðœ.' ),
+('Ð›ÐµÐ¾Ð½Ð¸Ð´', 'ÐÑ€Ñ‚Ñ‘Ð¼Ð¾Ð²Ð¸Ñ‡', 'Ð¨Ð¸Ñ€ÑÐµÐ²','+375(44)552-44-82', 'ÐžÑ€Ð»Ð¾Ð²ÑÐºÐ¾Ð³Ð¾ Ð£Ð»., Ð´Ð¾Ð¼ 14, ÐºÐ². 88', 2340, 'Ð ÐµÑÑ‚Ð¾Ñ€Ð°Ð½ "Ð˜Ñ‚Ð°Ð»ÑŒÑÐ½ÑÐºÐ¾Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐ½Ð¸Ðµ"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ', 'Ð’Ð°ÑÐ¸Ð»ÑŒÐµÐ² Ð.Ð.' ),
+('Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹', 'ÐœÐ°Ñ€ÐºÐ¾Ð²Ð¸Ñ‡', 'Ð¤ÐµÐ´Ð¾Ñ‚Ð¾Ð²','+375(44)333-36-75', 'ÐžÑ€Ð»Ð¾Ð²ÑÐºÐ¾Ð³Ð¾ Ð£Ð»., Ð´Ð¾Ð¼ 14, ÐºÐ². 76', 2569, 'Ð¡ÑƒÐ¿ÐµÑ€Ð¼Ð°Ñ€ÐºÐµÑ‚ "ÐœÐ°Ð³Ð½Ð¸Ñ‚"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ', 'ÐœÐ¾Ñ€Ð¾Ð·Ð¾Ð² Ð£.Ð’.' ),
+('Ð’Ð°Ñ€Ð²Ð°Ñ€Ð°', 'ÐšÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð¸Ð½Ð¾Ð²Ð½Ð°', 'ÐœÐ¾Ñ€Ð¾Ð·Ð¾Ð²Ð°','+375(29)173-16-05', 'Ð—Ñ‹Ð³Ð¸Ð½Ð° Ð£Ð»., Ð´Ð¾Ð¼ 2/Ð', 3000, 'Ð›ÐµÑÐ½Ð¾Ð¹ Ð¼Ð°ÑÑÐ¸Ð² "Ð‘ÐµÑ€ÐµÐ·Ð¾Ð²Ð°Ñ Ñ€Ð¾Ñ‰Ð°"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ð½ÐµÐ´Ð²Ð¸Ð¶Ð¸Ð¼Ð¾ÑÑ‚ÑŒ', 'Ð’Ð°ÑÐ¸Ð»ÑŒÐµÐ² Ðš.Ð˜.' ),
+('Ð˜Ð»ÑŒÑ', 'ÐÑ€Ñ‚Ñ‘Ð¼Ð¾Ð²Ð¸Ñ‡', 'Ð’Ð°ÑÐ¸Ð»ÑŒÐµÐ²','+375(33)228-97-33', 'ÐÐ°Ñ€Ð¾Ð´Ð½Ð°Ñ Ð£Ð»., Ð´Ð¾Ð¼ 14, ÐºÐ². 75', 2395, 'Ð¢ÐµÐ½Ð½Ð¸ÑÐ½Ñ‹Ð¹ ÐºÐ»ÑƒÐ± "Ð¡Ð¿Ð¾Ñ€Ñ‚Ð¼Ð°ÑÑ‚ÐµÑ€"','ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ', 'ÐœÐ¾Ñ€Ð¾Ð·Ð¾Ð²Ð° Ð•.Ðš.' )
 
 SELECT *
 FROM Client
 
 Insert into Employee(Name, Patronymic, Surname, Post)
-values('Àíàñòàñèÿ', 'Ñåðãååâíà', 'Ñòåïàíîâà', 'Ìåíåäæåð ïî ðàáîòå ñ êëèåíòàìè'),
-('Ñåðãåé ', 'Äàíèèëîâè÷', 'Ïàâëîâ', 'Ñòàðøèé ìåíåäæåð ïî êðåäèòîâàíèþ'),
-('Àðò¸ì', 'Ñåì¸íîâè÷', 'Ôèëàòîâ', 'Êðåäèòíûé ìåíåäæåð'),
-('Êîíñòàíòèí', 'Ëüâîâè÷', 'Âäîâèí', 'Ñòàðøèé ìåíåäæåð ïî êðåäèòîâàíèþ'),
-('Ìèðîñëàâà', 'Àíäðååâíà', 'Îäèíöîâà', 'Ñïåöèàëèñò ïî èïîòå÷íîìó êðåäèòîâàíèþ'),
-('Âÿ÷åñëàâ', 'Äìèòðèåâè÷', 'Îäèíöîâ', 'Ñòàðøèé ìåíåäæåð ïî êðåäèòîâàíèþ'),
-('Ìèðîñëàâ', 'Ïåòðîâè÷', 'Âàñèëüåâ', 'Êðåäèòíûé ìåíåäæåð'),
-('Åâãåíèé', 'Àëåêñàíäðîâè÷', 'Ïåòðîâ', 'Ñòàðøèé ìåíåäæåð ïî êðåäèòîâàíèþ'),
-('Ìèõàèë', 'Âèòàëüåâè÷', 'Áîëäà', 'Ñïåöèàëèñò ïî èïîòå÷íîìó êðåäèòîâàíèþ'),
-('Åêàòåðèíà', 'Âèòàëüåâíà', 'Çàÿö', 'Êðåäèòíûé ìåíåäæåð')
+values('ÐÐ½Ð°ÑÑ‚Ð°ÑÐ¸Ñ', 'Ð¡ÐµÑ€Ð³ÐµÐµÐ²Ð½Ð°', 'Ð¡Ñ‚ÐµÐ¿Ð°Ð½Ð¾Ð²Ð°', 'ÐœÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð¿Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ðµ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸'),
+('Ð¡ÐµÑ€Ð³ÐµÐ¹ ', 'Ð”Ð°Ð½Ð¸Ð¸Ð»Ð¾Ð²Ð¸Ñ‡', 'ÐŸÐ°Ð²Ð»Ð¾Ð²', 'Ð¡Ñ‚Ð°Ñ€ÑˆÐ¸Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð¿Ð¾ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸ÑŽ'),
+('ÐÑ€Ñ‚Ñ‘Ð¼', 'Ð¡ÐµÐ¼Ñ‘Ð½Ð¾Ð²Ð¸Ñ‡', 'Ð¤Ð¸Ð»Ð°Ñ‚Ð¾Ð²', 'ÐšÑ€ÐµÐ´Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€'),
+('ÐšÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð¸Ð½', 'Ð›ÑŒÐ²Ð¾Ð²Ð¸Ñ‡', 'Ð’Ð´Ð¾Ð²Ð¸Ð½', 'Ð¡Ñ‚Ð°Ñ€ÑˆÐ¸Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð¿Ð¾ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸ÑŽ'),
+('ÐœÐ¸Ñ€Ð¾ÑÐ»Ð°Ð²Ð°', 'ÐÐ½Ð´Ñ€ÐµÐµÐ²Ð½Ð°', 'ÐžÐ´Ð¸Ð½Ñ†Ð¾Ð²Ð°', 'Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚ Ð¿Ð¾ Ð¸Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ð¾Ð¼Ñƒ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸ÑŽ'),
+('Ð’ÑÑ‡ÐµÑÐ»Ð°Ð²', 'Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸ÐµÐ²Ð¸Ñ‡', 'ÐžÐ´Ð¸Ð½Ñ†Ð¾Ð²', 'Ð¡Ñ‚Ð°Ñ€ÑˆÐ¸Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð¿Ð¾ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸ÑŽ'),
+('ÐœÐ¸Ñ€Ð¾ÑÐ»Ð°Ð²', 'ÐŸÐµÑ‚Ñ€Ð¾Ð²Ð¸Ñ‡', 'Ð’Ð°ÑÐ¸Ð»ÑŒÐµÐ²', 'ÐšÑ€ÐµÐ´Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€'),
+('Ð•Ð²Ð³ÐµÐ½Ð¸Ð¹', 'ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð¾Ð²Ð¸Ñ‡', 'ÐŸÐµÑ‚Ñ€Ð¾Ð²', 'Ð¡Ñ‚Ð°Ñ€ÑˆÐ¸Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð¿Ð¾ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸ÑŽ'),
+('ÐœÐ¸Ñ…Ð°Ð¸Ð»', 'Ð’Ð¸Ñ‚Ð°Ð»ÑŒÐµÐ²Ð¸Ñ‡', 'Ð‘Ð¾Ð»Ð´Ð°', 'Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚ Ð¿Ð¾ Ð¸Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ð¾Ð¼Ñƒ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸ÑŽ'),
+('Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð°', 'Ð’Ð¸Ñ‚Ð°Ð»ÑŒÐµÐ²Ð½Ð°', 'Ð—Ð°ÑÑ†', 'ÐšÑ€ÐµÐ´Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€')
 
 select*
 from Employee
 
 insert into Loan(LoanType, LoanCondition, LoanRate, ReturnPeriod)
-values('Öåëåâîé','Ñòàíäàðòíûå', 18.55 , '7 ëåò'),
-('Íåöåëåâîé','Ñòàíäàðòíûå', 12.3, '3 ãîäà'),
-('Àâòîêðåäèò','Ëüãîòíûå', 16.31 , '5 ëåò'),
-('Èïîòå÷íûé','Ëüãîòíûå', 15.3 , '20 ëåò'),
-('Íà ñòðîèòåëüñòâî','Ëüãîòíûå', 17.25 , '14 ëåò'),
-('Ñîöèàëüíûé','Ñòàíäàðòíûå', 12.45 , '11 ëåò'),
-('Íà ïîâñåäíåâíûå íóæäû','Ñòàíäàðòíûå', 13.32 , '3 ãîäà'),
-('Íà ðàçâèòèå áèçíåñà','Ñòàíäàðòíûå', 17.32 , '4 ãîäà'),
-('Äîëãîñðî÷íûé','Ëüãîòíûå', 14.15 , '10 ëåò'),
-('Êðàòêîñðî÷íûé','Ñòàíäàðòíûå', 12.32 , '3 ãîäà')
+values('Ð¦ÐµÐ»ÐµÐ²Ð¾Ð¹','Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ', 18.55 , '7 Ð»ÐµÑ‚'),
+('ÐÐµÑ†ÐµÐ»ÐµÐ²Ð¾Ð¹','Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ', 12.3, '3 Ð³Ð¾Ð´Ð°'),
+('ÐÐ²Ñ‚Ð¾ÐºÑ€ÐµÐ´Ð¸Ñ‚','Ð›ÑŒÐ³Ð¾Ñ‚Ð½Ñ‹Ðµ', 16.31 , '5 Ð»ÐµÑ‚'),
+('Ð˜Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ñ‹Ð¹','Ð›ÑŒÐ³Ð¾Ñ‚Ð½Ñ‹Ðµ', 15.3 , '20 Ð»ÐµÑ‚'),
+('ÐÐ° ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾','Ð›ÑŒÐ³Ð¾Ñ‚Ð½Ñ‹Ðµ', 17.25 , '14 Ð»ÐµÑ‚'),
+('Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹','Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ', 12.45 , '11 Ð»ÐµÑ‚'),
+('ÐÐ° Ð¿Ð¾Ð²ÑÐµÐ´Ð½ÐµÐ²Ð½Ñ‹Ðµ Ð½ÑƒÐ¶Ð´Ñ‹','Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ', 13.32 , '3 Ð³Ð¾Ð´Ð°'),
+('ÐÐ° Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ðµ Ð±Ð¸Ð·Ð½ÐµÑÐ°','Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ', 17.32 , '4 Ð³Ð¾Ð´Ð°'),
+('Ð”Ð¾Ð»Ð³Ð¾ÑÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹','Ð›ÑŒÐ³Ð¾Ñ‚Ð½Ñ‹Ðµ', 14.15 , '10 Ð»ÐµÑ‚'),
+('ÐšÑ€Ð°Ñ‚ÐºÐ¾ÑÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹','Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ', 12.32 , '3 Ð³Ð¾Ð´Ð°')
 
 select*
 from Loan
 
 INSERT INTO City(CityName, Region, NumberOfInhabitants)
-VALUES('Ìèíñê', 'Ìèíñêàÿ îáëàñòü', 1996553),
-('Ãîìåëü', 'Ãîìåëüñêèé îáëàñòü', 503984),
-('Ãðîäíî', 'Ãðîäíåíñêàÿ îáëàñòü', 357493),
-('Áðåñò', 'Áðåñòñêàÿ îáëàñòü', 340753),
-('Ìîãèëåâ', 'Ìîãèë¸âñêàÿ îáëàñòü', 355436),
-('Âèòåáñê', 'Âèòåáñêàÿ îáëàñòü', 360419),
-('Ïîëîöê', 'Âèòåáñêàÿ îáëàñòü', 79896),
-('Áîðèñîâ', 'Ìèíñêàÿ îáëàñòü', 137703),
-('Áîáðóéñê', 'Ìîãèë¸âñêàÿ îáëàñòü', 209675),
-('Ñîëèãîðñê', 'Ìèíñêàÿ îáëàñòü', 99622)
+VALUES('ÐœÐ¸Ð½ÑÐº', 'ÐœÐ¸Ð½ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 1996553),
+('Ð“Ð¾Ð¼ÐµÐ»ÑŒ', 'Ð“Ð¾Ð¼ÐµÐ»ÑŒÑÐºÐ¸Ð¹ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 503984),
+('Ð“Ñ€Ð¾Ð´Ð½Ð¾', 'Ð“Ñ€Ð¾Ð´Ð½ÐµÐ½ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 357493),
+('Ð‘Ñ€ÐµÑÑ‚', 'Ð‘Ñ€ÐµÑÑ‚ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 340753),
+('ÐœÐ¾Ð³Ð¸Ð»ÐµÐ²', 'ÐœÐ¾Ð³Ð¸Ð»Ñ‘Ð²ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 355436),
+('Ð’Ð¸Ñ‚ÐµÐ±ÑÐº', 'Ð’Ð¸Ñ‚ÐµÐ±ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 360419),
+('ÐŸÐ¾Ð»Ð¾Ñ†Ðº', 'Ð’Ð¸Ñ‚ÐµÐ±ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 79896),
+('Ð‘Ð¾Ñ€Ð¸ÑÐ¾Ð²', 'ÐœÐ¸Ð½ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 137703),
+('Ð‘Ð¾Ð±Ñ€ÑƒÐ¹ÑÐº', 'ÐœÐ¾Ð³Ð¸Ð»Ñ‘Ð²ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 209675),
+('Ð¡Ð¾Ð»Ð¸Ð³Ð¾Ñ€ÑÐº', 'ÐœÐ¸Ð½ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ', 99622)
 
 select*
 from City
 
 insert into Bank(BankName, City, DateOfFounded)
-VALUES('"Ïðèîðáàíê" ÎÀÎ', (SELECT CityName FROM City WHERE CityID = 1), '1988-11-21'),
-('ÀÑÁ "Áåëàðóñáàíê"', (SELECT CityName FROM City WHERE CityID = 2), '1922-10-20'),
-('ÎÀÎ "Áåëàãðîïðîìáàíê"', (SELECT CityName FROM City WHERE CityID = 3), '1990-04-01'),
-('ÎÀÎ "Áåëèíâåñòáàíê"', (SELECT CityName FROM City WHERE CityID = 4), '2001-09-03'),
-('ÎÀÎ "Áåëîðóññêèé íàðîäíûé áàíê"', (SELECT CityName FROM City WHERE CityID = 5), '1991-09-01'),
-('ÇÀÎ "Ìèíñêèé òðàíçèòíûé áàíê"', (SELECT CityName FROM City WHERE CityID = 6), '1994-03-14'),
-('ÎÀÎ "Ïàðèòåòáàíê"', (SELECT CityName FROM City WHERE CityID = 7), '1991-01-18'),
-('ÎÀÎ "Òåõíîáàíê"', (SELECT CityName FROM City WHERE CityID = 8), '1994-08-05'),
-('ÎÀÎ "Áåëâíåøýêîíîìáàíê"', (SELECT CityName FROM City WHERE CityID = 9), '1991-12-12'),
-('ÎÀÎ "ÑáåðÁàíê"', (SELECT CityName FROM City WHERE CityID = 10), '1991-12-28')
+VALUES('"ÐŸÑ€Ð¸Ð¾Ñ€Ð±Ð°Ð½Ðº" ÐžÐÐž', (SELECT CityName FROM City WHERE CityID = 1), '1988-11-21'),
+('ÐÐ¡Ð‘ "Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 2), '1922-10-20'),
+('ÐžÐÐž "Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 3), '1990-04-01'),
+('ÐžÐÐž "Ð‘ÐµÐ»Ð¸Ð½Ð²ÐµÑÑ‚Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 4), '2001-09-03'),
+('ÐžÐÐž "Ð‘ÐµÐ»Ð¾Ñ€ÑƒÑÑÐºÐ¸Ð¹ Ð½Ð°Ñ€Ð¾Ð´Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 5), '1991-09-01'),
+('Ð—ÐÐž "ÐœÐ¸Ð½ÑÐºÐ¸Ð¹ Ñ‚Ñ€Ð°Ð½Ð·Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 6), '1994-03-14'),
+('ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 7), '1991-01-18'),
+('ÐžÐÐž "Ð¢ÐµÑ…Ð½Ð¾Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 8), '1994-08-05'),
+('ÐžÐÐž "Ð‘ÐµÐ»Ð²Ð½ÐµÑˆÑÐºÐ¾Ð½Ð¾Ð¼Ð±Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 9), '1991-12-12'),
+('ÐžÐÐž "Ð¡Ð±ÐµÑ€Ð‘Ð°Ð½Ðº"', (SELECT CityName FROM City WHERE CityID = 10), '1991-12-28')
 
 SELECT*
 FROM Bank
 
---Æèâ¸ò â
+--Ð–Ð¸Ð²Ñ‘Ñ‚ Ð²
 INSERT INTO LivesIn($from_id, $to_id)
-VALUES((SELECT $node_id FROM Client WHERE ClientID = 1), (SELECT $node_id FROM City WHERE CityID = 1)),--Ïîëèíà è Ìèíñê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 2), (SELECT $node_id FROM City WHERE CityID = 1)),-- Åëèçàâåòà è Ìèíñê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 3), (SELECT $node_id FROM City WHERE CityID = 2)),-- Âèêòîð è Ãîìåëü
-	  ((SELECT $node_id FROM Client WHERE ClientID = 4), (SELECT $node_id FROM City WHERE CityID = 2)),--Àðèíà è Ãîìåëü
-	  ((SELECT $node_id FROM Client WHERE ClientID = 5), (SELECT $node_id FROM City WHERE CityID = 3)),--Ñåðãåé è Ãðîäíî
-	  ((SELECT $node_id FROM Client WHERE ClientID = 6), (SELECT $node_id FROM City WHERE CityID = 4)),--Ìèðîí è Áðåñò
-	  ((SELECT $node_id FROM Client WHERE ClientID = 7), (SELECT $node_id FROM City WHERE CityID = 5)),--Ëåâ è Ìîãèë¸â
-	  ((SELECT $node_id FROM Client WHERE ClientID = 8), (SELECT $node_id FROM City WHERE CityID = 5)),--Ñòàíèñëàâ è Ìîãèë¸â
-	  ((SELECT $node_id FROM Client WHERE ClientID = 9), (SELECT $node_id FROM City WHERE CityID = 6)),--Âèêòîðèÿ è Âèòåáñê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 10), (SELECT $node_id FROM City WHERE CityID = 7)),--Âàëåðèÿ è Ïîëîöê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 11), (SELECT $node_id FROM City WHERE CityID = 7)),--Êèðèëë è Ïîëîöê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 12), (SELECT $node_id FROM City WHERE CityID = 8)),--Àëåêñàíäðà è Áîðèñîâ
-	  ((SELECT $node_id FROM Client WHERE ClientID = 13), (SELECT $node_id FROM City WHERE CityID = 8)),--Ìèëàíà è Áîðèñîâ
-	  ((SELECT $node_id FROM Client WHERE ClientID = 14), (SELECT $node_id FROM City WHERE CityID = 9)),--Ëåîíèä è Áîáðóéñê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 15), (SELECT $node_id FROM City WHERE CityID = 9)),--Äìèòðèé è Áîáðóéñê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 16), (SELECT $node_id FROM City WHERE CityID = 10)),-- Âàðâàðà è Ñîëèãîðñê
-	  ((SELECT $node_id FROM Client WHERE ClientID = 17), (SELECT $node_id FROM City WHERE CityID = 10))-- Èëüÿ è Ñîëèãîðñê
+VALUES((SELECT $node_id FROM Client WHERE ClientID = 1), (SELECT $node_id FROM City WHERE CityID = 1)),--ÐŸÐ¾Ð»Ð¸Ð½Ð° Ð¸ ÐœÐ¸Ð½ÑÐº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 2), (SELECT $node_id FROM City WHERE CityID = 1)),-- Ð•Ð»Ð¸Ð·Ð°Ð²ÐµÑ‚Ð° Ð¸ ÐœÐ¸Ð½ÑÐº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 3), (SELECT $node_id FROM City WHERE CityID = 2)),-- Ð’Ð¸ÐºÑ‚Ð¾Ñ€ Ð¸ Ð“Ð¾Ð¼ÐµÐ»ÑŒ
+	  ((SELECT $node_id FROM Client WHERE ClientID = 4), (SELECT $node_id FROM City WHERE CityID = 2)),--ÐÑ€Ð¸Ð½Ð° Ð¸ Ð“Ð¾Ð¼ÐµÐ»ÑŒ
+	  ((SELECT $node_id FROM Client WHERE ClientID = 5), (SELECT $node_id FROM City WHERE CityID = 3)),--Ð¡ÐµÑ€Ð³ÐµÐ¹ Ð¸ Ð“Ñ€Ð¾Ð´Ð½Ð¾
+	  ((SELECT $node_id FROM Client WHERE ClientID = 6), (SELECT $node_id FROM City WHERE CityID = 4)),--ÐœÐ¸Ñ€Ð¾Ð½ Ð¸ Ð‘Ñ€ÐµÑÑ‚
+	  ((SELECT $node_id FROM Client WHERE ClientID = 7), (SELECT $node_id FROM City WHERE CityID = 5)),--Ð›ÐµÐ² Ð¸ ÐœÐ¾Ð³Ð¸Ð»Ñ‘Ð²
+	  ((SELECT $node_id FROM Client WHERE ClientID = 8), (SELECT $node_id FROM City WHERE CityID = 5)),--Ð¡Ñ‚Ð°Ð½Ð¸ÑÐ»Ð°Ð² Ð¸ ÐœÐ¾Ð³Ð¸Ð»Ñ‘Ð²
+	  ((SELECT $node_id FROM Client WHERE ClientID = 9), (SELECT $node_id FROM City WHERE CityID = 6)),--Ð’Ð¸ÐºÑ‚Ð¾Ñ€Ð¸Ñ Ð¸ Ð’Ð¸Ñ‚ÐµÐ±ÑÐº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 10), (SELECT $node_id FROM City WHERE CityID = 7)),--Ð’Ð°Ð»ÐµÑ€Ð¸Ñ Ð¸ ÐŸÐ¾Ð»Ð¾Ñ†Ðº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 11), (SELECT $node_id FROM City WHERE CityID = 7)),--ÐšÐ¸Ñ€Ð¸Ð»Ð» Ð¸ ÐŸÐ¾Ð»Ð¾Ñ†Ðº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 12), (SELECT $node_id FROM City WHERE CityID = 8)),--ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð° Ð¸ Ð‘Ð¾Ñ€Ð¸ÑÐ¾Ð²
+	  ((SELECT $node_id FROM Client WHERE ClientID = 13), (SELECT $node_id FROM City WHERE CityID = 8)),--ÐœÐ¸Ð»Ð°Ð½Ð° Ð¸ Ð‘Ð¾Ñ€Ð¸ÑÐ¾Ð²
+	  ((SELECT $node_id FROM Client WHERE ClientID = 14), (SELECT $node_id FROM City WHERE CityID = 9)),--Ð›ÐµÐ¾Ð½Ð¸Ð´ Ð¸ Ð‘Ð¾Ð±Ñ€ÑƒÐ¹ÑÐº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 15), (SELECT $node_id FROM City WHERE CityID = 9)),--Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹ Ð¸ Ð‘Ð¾Ð±Ñ€ÑƒÐ¹ÑÐº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 16), (SELECT $node_id FROM City WHERE CityID = 10)),-- Ð’Ð°Ñ€Ð²Ð°Ñ€Ð° Ð¸ Ð¡Ð¾Ð»Ð¸Ð³Ð¾Ñ€ÑÐº
+	  ((SELECT $node_id FROM Client WHERE ClientID = 17), (SELECT $node_id FROM City WHERE CityID = 10))-- Ð˜Ð»ÑŒÑ Ð¸ Ð¡Ð¾Ð»Ð¸Ð³Ð¾Ñ€ÑÐº
 
 SELECT*
 FROM LivesIn
 
---Ðàáîòàåò â
+--Ð Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ Ð²
 INSERT INTO WorkIn($from_id, $to_id)
 VALUES 
-((SELECT $node_id FROM Employee WHERE EmployeeID = 1), (SELECT $node_id FROM Bank WHERE BankID = 1)),--Àíàñòàñèÿ è Ïðèîðáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 2), (SELECT $node_id FROM Bank WHERE BankID = 2)),--Ñåðãåé è Áåëàðóñáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 3), (SELECT $node_id FROM Bank WHERE BankID = 3)),--Àðò¸ì è Áåëàãðîìïðîìáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 4), (SELECT $node_id FROM Bank WHERE BankID = 4)),--Êîíñòàíòèí è Áåëèíâåñòáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 5), (SELECT $node_id FROM Bank WHERE BankID = 5)),--Ìèðîñëàâà è Áåëîðóññêèé íàðîäíûé áàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 6), (SELECT $node_id FROM Bank WHERE BankID = 6)),--Âÿ÷åñëàâ è Ìèíñêèé òðàíçèòíûé áàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 7), (SELECT $node_id FROM Bank WHERE BankID = 7)),--Ìèðîñëàâ è Ïàðèòåòáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 8), (SELECT $node_id FROM Bank WHERE BankID = 8)),--Åâãåíèé è Òåõíîáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 9), (SELECT $node_id FROM Bank WHERE BankID = 9)),--Ìèõàèë è Áåëâíåøýêîíîìáàíê
-((SELECT $node_id FROM Employee WHERE EmployeeID = 10), (SELECT $node_id FROM Bank WHERE BankID = 10))--Åêàòåðèíà è ÑáåðÁàíê
+((SELECT $node_id FROM Employee WHERE EmployeeID = 1), (SELECT $node_id FROM Bank WHERE BankID = 1)),--ÐÐ½Ð°ÑÑ‚Ð°ÑÐ¸Ñ Ð¸ ÐŸÑ€Ð¸Ð¾Ñ€Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 2), (SELECT $node_id FROM Bank WHERE BankID = 2)),--Ð¡ÐµÑ€Ð³ÐµÐ¹ Ð¸ Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 3), (SELECT $node_id FROM Bank WHERE BankID = 3)),--ÐÑ€Ñ‚Ñ‘Ð¼ Ð¸ Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¼Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 4), (SELECT $node_id FROM Bank WHERE BankID = 4)),--ÐšÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð¸Ð½ Ð¸ Ð‘ÐµÐ»Ð¸Ð½Ð²ÐµÑÑ‚Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 5), (SELECT $node_id FROM Bank WHERE BankID = 5)),--ÐœÐ¸Ñ€Ð¾ÑÐ»Ð°Ð²Ð° Ð¸ Ð‘ÐµÐ»Ð¾Ñ€ÑƒÑÑÐºÐ¸Ð¹ Ð½Ð°Ñ€Ð¾Ð´Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 6), (SELECT $node_id FROM Bank WHERE BankID = 6)),--Ð’ÑÑ‡ÐµÑÐ»Ð°Ð² Ð¸ ÐœÐ¸Ð½ÑÐºÐ¸Ð¹ Ñ‚Ñ€Ð°Ð½Ð·Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 7), (SELECT $node_id FROM Bank WHERE BankID = 7)),--ÐœÐ¸Ñ€Ð¾ÑÐ»Ð°Ð² Ð¸ ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 8), (SELECT $node_id FROM Bank WHERE BankID = 8)),--Ð•Ð²Ð³ÐµÐ½Ð¸Ð¹ Ð¸ Ð¢ÐµÑ…Ð½Ð¾Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 9), (SELECT $node_id FROM Bank WHERE BankID = 9)),--ÐœÐ¸Ñ…Ð°Ð¸Ð» Ð¸ Ð‘ÐµÐ»Ð²Ð½ÐµÑˆÑÐºÐ¾Ð½Ð¾Ð¼Ð±Ð°Ð½Ðº
+((SELECT $node_id FROM Employee WHERE EmployeeID = 10), (SELECT $node_id FROM Bank WHERE BankID = 10))--Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð° Ð¸ Ð¡Ð±ÐµÑ€Ð‘Ð°Ð½Ðº
 
 SELECT*
 FROM WorkIn
 
---Ïîäïèñûâàåò
+--ÐŸÐ¾Ð´Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÑ‚
 INSERT INTO Signs($from_id, $to_id)
 VALUES
-((SELECT $node_id FROM Client WHERE ClientID = 1),(SELECT $node_id FROM Loan WHERE LoanID = 1)),--Ïîëèíà è Öåëåâîé
-((SELECT $node_id FROM Client WHERE ClientID = 2),(SELECT $node_id FROM Loan WHERE LoanID = 1)),--Åëèçàâåòà è Öåëåâîé
-((SELECT $node_id FROM Client WHERE ClientID = 3),(SELECT $node_id FROM Loan WHERE LoanID = 2)),--Âèêòîð è Íåöåëåâîé
-((SELECT $node_id FROM Client WHERE ClientID = 4),(SELECT $node_id FROM Loan WHERE LoanID = 2)),--Àðèíà è Íåöåëåâîé
-((SELECT $node_id FROM Client WHERE ClientID = 5),(SELECT $node_id FROM Loan WHERE LoanID = 3)),--Ñåðãåé è Àâòîêðåäèò
-((SELECT $node_id FROM Client WHERE ClientID = 6),(SELECT $node_id FROM Loan WHERE LoanID = 3)),--Ìèðîí è Àâòîêðåäèò
-((SELECT $node_id FROM Client WHERE ClientID = 7),(SELECT $node_id FROM Loan WHERE LoanID = 4)),--Ëåâ è Èïîòå÷íûé
-((SELECT $node_id FROM Client WHERE ClientID = 8),(SELECT $node_id FROM Loan WHERE LoanID = 4)),--Ñòàíèñëàâ è Èïîòå÷íûé
-((SELECT $node_id FROM Client WHERE ClientID = 9),(SELECT $node_id FROM Loan WHERE LoanID = 5)),--Âèêòîðèÿ è Íà ñòðîèòåëüñòâî
-((SELECT $node_id FROM Client WHERE ClientID = 10),(SELECT $node_id FROM Loan WHERE LoanID = 5)),--Âàëåðèÿ è íà ñòðîèòåëüñòâî
-((SELECT $node_id FROM Client WHERE ClientID = 11),(SELECT $node_id FROM Loan WHERE LoanID = 6)),--Êèðèëë è Ñîöèàëüíûé
-((SELECT $node_id FROM Client WHERE ClientID = 12),(SELECT $node_id FROM Loan WHERE LoanID = 7)),--Àëåêñàíäðà è Íà ïîâñåäíåâíûå íóæäû
-((SELECT $node_id FROM Client WHERE ClientID = 13),(SELECT $node_id FROM Loan WHERE LoanID = 8)),--Ìèëàíà è Íà ðàçâèòèå áèçíåñà
-((SELECT $node_id FROM Client WHERE ClientID = 14),(SELECT $node_id FROM Loan WHERE LoanID = 9)),--Ëåîíèä è Äîëãîñðî÷íûé
-((SELECT $node_id FROM Client WHERE ClientID = 15),(SELECT $node_id FROM Loan WHERE LoanID = 9)),--Äìèòðèé è Äîëãîñðî÷íûé
-((SELECT $node_id FROM Client WHERE ClientID = 16),(SELECT $node_id FROM Loan WHERE LoanID = 10)),--Âàðâàðà è Êðàòêîñòðî÷íûé
-((SELECT $node_id FROM Client WHERE ClientID = 17),(SELECT $node_id FROM Loan WHERE LoanID = 10))--Èëüÿ è Êðàòêîñòðî÷íûé 
+((SELECT $node_id FROM Client WHERE ClientID = 1),(SELECT $node_id FROM Loan WHERE LoanID = 1)),--ÐŸÐ¾Ð»Ð¸Ð½Ð° Ð¸ Ð¦ÐµÐ»ÐµÐ²Ð¾Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 2),(SELECT $node_id FROM Loan WHERE LoanID = 1)),--Ð•Ð»Ð¸Ð·Ð°Ð²ÐµÑ‚Ð° Ð¸ Ð¦ÐµÐ»ÐµÐ²Ð¾Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 3),(SELECT $node_id FROM Loan WHERE LoanID = 2)),--Ð’Ð¸ÐºÑ‚Ð¾Ñ€ Ð¸ ÐÐµÑ†ÐµÐ»ÐµÐ²Ð¾Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 4),(SELECT $node_id FROM Loan WHERE LoanID = 2)),--ÐÑ€Ð¸Ð½Ð° Ð¸ ÐÐµÑ†ÐµÐ»ÐµÐ²Ð¾Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 5),(SELECT $node_id FROM Loan WHERE LoanID = 3)),--Ð¡ÐµÑ€Ð³ÐµÐ¹ Ð¸ ÐÐ²Ñ‚Ð¾ÐºÑ€ÐµÐ´Ð¸Ñ‚
+((SELECT $node_id FROM Client WHERE ClientID = 6),(SELECT $node_id FROM Loan WHERE LoanID = 3)),--ÐœÐ¸Ñ€Ð¾Ð½ Ð¸ ÐÐ²Ñ‚Ð¾ÐºÑ€ÐµÐ´Ð¸Ñ‚
+((SELECT $node_id FROM Client WHERE ClientID = 7),(SELECT $node_id FROM Loan WHERE LoanID = 4)),--Ð›ÐµÐ² Ð¸ Ð˜Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 8),(SELECT $node_id FROM Loan WHERE LoanID = 4)),--Ð¡Ñ‚Ð°Ð½Ð¸ÑÐ»Ð°Ð² Ð¸ Ð˜Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 9),(SELECT $node_id FROM Loan WHERE LoanID = 5)),--Ð’Ð¸ÐºÑ‚Ð¾Ñ€Ð¸Ñ Ð¸ ÐÐ° ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾
+((SELECT $node_id FROM Client WHERE ClientID = 10),(SELECT $node_id FROM Loan WHERE LoanID = 5)),--Ð’Ð°Ð»ÐµÑ€Ð¸Ñ Ð¸ Ð½Ð° ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾
+((SELECT $node_id FROM Client WHERE ClientID = 11),(SELECT $node_id FROM Loan WHERE LoanID = 6)),--ÐšÐ¸Ñ€Ð¸Ð»Ð» Ð¸ Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 12),(SELECT $node_id FROM Loan WHERE LoanID = 7)),--ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð° Ð¸ ÐÐ° Ð¿Ð¾Ð²ÑÐµÐ´Ð½ÐµÐ²Ð½Ñ‹Ðµ Ð½ÑƒÐ¶Ð´Ñ‹
+((SELECT $node_id FROM Client WHERE ClientID = 13),(SELECT $node_id FROM Loan WHERE LoanID = 8)),--ÐœÐ¸Ð»Ð°Ð½Ð° Ð¸ ÐÐ° Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ðµ Ð±Ð¸Ð·Ð½ÐµÑÐ°
+((SELECT $node_id FROM Client WHERE ClientID = 14),(SELECT $node_id FROM Loan WHERE LoanID = 9)),--Ð›ÐµÐ¾Ð½Ð¸Ð´ Ð¸ Ð”Ð¾Ð»Ð³Ð¾ÑÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 15),(SELECT $node_id FROM Loan WHERE LoanID = 9)),--Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹ Ð¸ Ð”Ð¾Ð»Ð³Ð¾ÑÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 16),(SELECT $node_id FROM Loan WHERE LoanID = 10)),--Ð’Ð°Ñ€Ð²Ð°Ñ€Ð° Ð¸ ÐšÑ€Ð°Ñ‚ÐºÐ¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Client WHERE ClientID = 17),(SELECT $node_id FROM Loan WHERE LoanID = 10))--Ð˜Ð»ÑŒÑ Ð¸ ÐšÑ€Ð°Ñ‚ÐºÐ¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ð¹ 
 
 SELECT*
 FROM Signs
 
---Îôîðìëÿåò
+--ÐžÑ„Ð¾Ñ€Ð¼Ð»ÑÐµÑ‚
 INSERT INTO Formalize($from_id, $to_id)
 VALUES
-((SELECT $node_id FROM Employee WHERE EmployeeID = 1),(SELECT $node_id FROM Loan WHERE LoanID = 1)),--Àíàñòàñèÿ è Öåëåâîé
-((SELECT $node_id FROM Employee WHERE EmployeeID = 2),(SELECT $node_id FROM Loan WHERE LoanID = 2)),--Ñåðãåé è Íåöåëåâîé
-((SELECT $node_id FROM Employee WHERE EmployeeID = 3),(SELECT $node_id FROM Loan WHERE LoanID = 3)),--Àðò¸ì è Àâòîêðåäèò
-((SELECT $node_id FROM Employee WHERE EmployeeID = 4),(SELECT $node_id FROM Loan WHERE LoanID = 4)),--Êîíñòàíòèí è Èïîòå÷íûé
-((SELECT $node_id FROM Employee WHERE EmployeeID = 5),(SELECT $node_id FROM Loan WHERE LoanID = 5)),--Ìèðîñëàâà è Íà ñòðîèòåëüñòâî
-((SELECT $node_id FROM Employee WHERE EmployeeID = 6),(SELECT $node_id FROM Loan WHERE LoanID = 6)),--Âÿ÷åñëàâ è Ñîöèàëüíûé
-((SELECT $node_id FROM Employee WHERE EmployeeID = 7),(SELECT $node_id FROM Loan WHERE LoanID = 7)),--Ìèðîñëàâ è Íà ïîâñåäíåâíûå íóæäû
-((SELECT $node_id FROM Employee WHERE EmployeeID = 8),(SELECT $node_id FROM Loan WHERE LoanID = 8)),--Åâãåíèé è Íà ðàçâèòèå áèçíåñà
-((SELECT $node_id FROM Employee WHERE EmployeeID = 9),(SELECT $node_id FROM Loan WHERE LoanID = 9)),--Ìèõàèë è Äîëãîñðîíûé
-((SELECT $node_id FROM Employee WHERE EmployeeID = 10),(SELECT $node_id FROM Loan WHERE LoanID = 10))--Åêàòåðèíà è Êðàòêîñðî÷íûé
+((SELECT $node_id FROM Employee WHERE EmployeeID = 1),(SELECT $node_id FROM Loan WHERE LoanID = 1)),--ÐÐ½Ð°ÑÑ‚Ð°ÑÐ¸Ñ Ð¸ Ð¦ÐµÐ»ÐµÐ²Ð¾Ð¹
+((SELECT $node_id FROM Employee WHERE EmployeeID = 2),(SELECT $node_id FROM Loan WHERE LoanID = 2)),--Ð¡ÐµÑ€Ð³ÐµÐ¹ Ð¸ ÐÐµÑ†ÐµÐ»ÐµÐ²Ð¾Ð¹
+((SELECT $node_id FROM Employee WHERE EmployeeID = 3),(SELECT $node_id FROM Loan WHERE LoanID = 3)),--ÐÑ€Ñ‚Ñ‘Ð¼ Ð¸ ÐÐ²Ñ‚Ð¾ÐºÑ€ÐµÐ´Ð¸Ñ‚
+((SELECT $node_id FROM Employee WHERE EmployeeID = 4),(SELECT $node_id FROM Loan WHERE LoanID = 4)),--ÐšÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð¸Ð½ Ð¸ Ð˜Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Employee WHERE EmployeeID = 5),(SELECT $node_id FROM Loan WHERE LoanID = 5)),--ÐœÐ¸Ñ€Ð¾ÑÐ»Ð°Ð²Ð° Ð¸ ÐÐ° ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾
+((SELECT $node_id FROM Employee WHERE EmployeeID = 6),(SELECT $node_id FROM Loan WHERE LoanID = 6)),--Ð’ÑÑ‡ÐµÑÐ»Ð°Ð² Ð¸ Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹
+((SELECT $node_id FROM Employee WHERE EmployeeID = 7),(SELECT $node_id FROM Loan WHERE LoanID = 7)),--ÐœÐ¸Ñ€Ð¾ÑÐ»Ð°Ð² Ð¸ ÐÐ° Ð¿Ð¾Ð²ÑÐµÐ´Ð½ÐµÐ²Ð½Ñ‹Ðµ Ð½ÑƒÐ¶Ð´Ñ‹
+((SELECT $node_id FROM Employee WHERE EmployeeID = 8),(SELECT $node_id FROM Loan WHERE LoanID = 8)),--Ð•Ð²Ð³ÐµÐ½Ð¸Ð¹ Ð¸ ÐÐ° Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ðµ Ð±Ð¸Ð·Ð½ÐµÑÐ°
+((SELECT $node_id FROM Employee WHERE EmployeeID = 9),(SELECT $node_id FROM Loan WHERE LoanID = 9)),--ÐœÐ¸Ñ…Ð°Ð¸Ð» Ð¸ Ð”Ð¾Ð»Ð³Ð¾ÑÑ€Ð¾Ð½Ñ‹Ð¹
+((SELECT $node_id FROM Employee WHERE EmployeeID = 10),(SELECT $node_id FROM Loan WHERE LoanID = 10))--Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð° Ð¸ ÐšÑ€Ð°Ñ‚ÐºÐ¾ÑÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹
 
 SELECT*
 FROM Formalize
@@ -267,33 +267,33 @@ FROM Formalize
 SELECT*
 FROM Bank
 
-INSERT INTO Ñooperates($from_id, $to_id)
+INSERT INTO Ð¡ooperates($from_id, $to_id)
 VALUES
-((SELECT $node_id FROM Bank WHERE BankID = 1), (SELECT $node_id FROM Bank WHERE BankID = 2)),--"Ïðèîðáàíê" ÎÀÎ è ÀÑÁ "Áåëàðóñáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 1), (SELECT $node_id FROM Bank WHERE BankID = 3)),--"Ïðèîðáàíê" ÎÀÎ è ÎÀÎ "Áåëàãðîïðîìáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 2), (SELECT $node_id FROM Bank WHERE BankID = 3)),--ÀÑÁ "Áåëàðóñáàíê" è ÎÀÎ "Áåëàãðîïðîìáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 3), (SELECT $node_id FROM Bank WHERE BankID = 5)),--ÎÀÎ "Áåëàãðîïðîìáàíê" è ÎÀÎ "Áåëîðóññêèé íàðîäíûé áàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 6), (SELECT $node_id FROM Bank WHERE BankID = 7)),--ÇÀÎ "Ìèíñêèé òðàíçèòíûé áàíê" è ÎÀÎ "Ïàðèòåòáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 5), (SELECT $node_id FROM Bank WHERE BankID = 1)),--ÎÀÎ "Áåëîðóññêèé íàðîäíûé áàíê" è "Ïðèîðáàíê" ÎÀÎ
-((SELECT $node_id FROM Bank WHERE BankID = 3), (SELECT $node_id FROM Bank WHERE BankID = 8)),--ÎÀÎ "Áåëàãðîïðîìáàíê" è ÎÀÎ "Òåõíîáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 7), (SELECT $node_id FROM Bank WHERE BankID = 9)),--ÎÀÎ "Ïàðèòåòáàíê" è ÎÀÎ "Áåëâíåøýêîíîìáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 10), (SELECT $node_id FROM Bank WHERE BankID = 2)),--ÎÀÎ "ÑáåðÁàíê" è ÀÑÁ "Áåëàðóñáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 10), (SELECT $node_id FROM Bank WHERE BankID = 6)),--ÎÀÎ "ÑáåðÁàíê" è ÎÀÎ "Áåëàãðîïðîìáàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 4), (SELECT $node_id FROM Bank WHERE BankID = 10)),--ÎÀÎ "Áåëèíâåñòáàíê" è 
-((SELECT $node_id FROM Bank WHERE BankID = 9), (SELECT $node_id FROM Bank WHERE BankID = 6)),--ÎÀÎ "Áåëâíåøýêîíîìáàíê" è ÇÀÎ "Ìèíñêèé òðàíçèòíûé áàíê"
-((SELECT $node_id FROM Bank WHERE BankID = 9), (SELECT $node_id FROM Bank WHERE BankID = 8))--ÎÀÎ "Áåëâíåøýêîíîìáàíê" è ÎÀÎ "Òåõíîáàíê"
+((SELECT $node_id FROM Bank WHERE BankID = 1), (SELECT $node_id FROM Bank WHERE BankID = 2)),--"ÐŸÑ€Ð¸Ð¾Ñ€Ð±Ð°Ð½Ðº" ÐžÐÐž Ð¸ ÐÐ¡Ð‘ "Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 1), (SELECT $node_id FROM Bank WHERE BankID = 3)),--"ÐŸÑ€Ð¸Ð¾Ñ€Ð±Ð°Ð½Ðº" ÐžÐÐž Ð¸ ÐžÐÐž "Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 2), (SELECT $node_id FROM Bank WHERE BankID = 3)),--ÐÐ¡Ð‘ "Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ±Ð°Ð½Ðº" Ð¸ ÐžÐÐž "Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 3), (SELECT $node_id FROM Bank WHERE BankID = 5)),--ÐžÐÐž "Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº" Ð¸ ÐžÐÐž "Ð‘ÐµÐ»Ð¾Ñ€ÑƒÑÑÐºÐ¸Ð¹ Ð½Ð°Ñ€Ð¾Ð´Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 6), (SELECT $node_id FROM Bank WHERE BankID = 7)),--Ð—ÐÐž "ÐœÐ¸Ð½ÑÐºÐ¸Ð¹ Ñ‚Ñ€Ð°Ð½Ð·Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº" Ð¸ ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 5), (SELECT $node_id FROM Bank WHERE BankID = 1)),--ÐžÐÐž "Ð‘ÐµÐ»Ð¾Ñ€ÑƒÑÑÐºÐ¸Ð¹ Ð½Ð°Ñ€Ð¾Ð´Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº" Ð¸ "ÐŸÑ€Ð¸Ð¾Ñ€Ð±Ð°Ð½Ðº" ÐžÐÐž
+((SELECT $node_id FROM Bank WHERE BankID = 3), (SELECT $node_id FROM Bank WHERE BankID = 8)),--ÐžÐÐž "Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº" Ð¸ ÐžÐÐž "Ð¢ÐµÑ…Ð½Ð¾Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 7), (SELECT $node_id FROM Bank WHERE BankID = 9)),--ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº" Ð¸ ÐžÐÐž "Ð‘ÐµÐ»Ð²Ð½ÐµÑˆÑÐºÐ¾Ð½Ð¾Ð¼Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 10), (SELECT $node_id FROM Bank WHERE BankID = 2)),--ÐžÐÐž "Ð¡Ð±ÐµÑ€Ð‘Ð°Ð½Ðº" Ð¸ ÐÐ¡Ð‘ "Ð‘ÐµÐ»Ð°Ñ€ÑƒÑÐ±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 10), (SELECT $node_id FROM Bank WHERE BankID = 6)),--ÐžÐÐž "Ð¡Ð±ÐµÑ€Ð‘Ð°Ð½Ðº" Ð¸ ÐžÐÐž "Ð‘ÐµÐ»Ð°Ð³Ñ€Ð¾Ð¿Ñ€Ð¾Ð¼Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 4), (SELECT $node_id FROM Bank WHERE BankID = 10)),--ÐžÐÐž "Ð‘ÐµÐ»Ð¸Ð½Ð²ÐµÑÑ‚Ð±Ð°Ð½Ðº" Ð¸ 
+((SELECT $node_id FROM Bank WHERE BankID = 9), (SELECT $node_id FROM Bank WHERE BankID = 6)),--ÐžÐÐž "Ð‘ÐµÐ»Ð²Ð½ÐµÑˆÑÐºÐ¾Ð½Ð¾Ð¼Ð±Ð°Ð½Ðº" Ð¸ Ð—ÐÐž "ÐœÐ¸Ð½ÑÐºÐ¸Ð¹ Ñ‚Ñ€Ð°Ð½Ð·Ð¸Ñ‚Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº"
+((SELECT $node_id FROM Bank WHERE BankID = 9), (SELECT $node_id FROM Bank WHERE BankID = 8))--ÐžÐÐž "Ð‘ÐµÐ»Ð²Ð½ÐµÑˆÑÐºÐ¾Ð½Ð¾Ð¼Ð±Ð°Ð½Ðº" Ð¸ ÐžÐÐž "Ð¢ÐµÑ…Ð½Ð¾Ð±Ð°Ð½Ðº"
 
 SELECT*
-FROM Ñooperates
+FROM Ð¡ooperates
 
----------------------ÇÀÏÐÎÑÛ MATCH-------------------
+---------------------Ð—ÐÐŸÐ ÐžÐ¡Ð« MATCH-------------------
 SELECT  Client.Name,
 		City.CityName 
 FROM	Client,
 		LivesIn,
 		City
 WHERE MATCH(Client-(LivesIn)->City)
-AND City.CityName = 'Ìèíñê'
+AND City.CityName = 'ÐœÐ¸Ð½ÑÐº'
 
 SELECT Client.Name,
        Loan.LoanType
@@ -301,7 +301,7 @@ FROM Client,
 	 Signs,
 	 Loan
 WHERE MATCH(Client-(Signs)->Loan)
-AND Loan.LoanType = 'Àâòîêðåäèò'
+AND Loan.LoanType = 'ÐÐ²Ñ‚Ð¾ÐºÑ€ÐµÐ´Ð¸Ñ‚'
 
 SELECT Employee.Name,
        Loan.LoanType
@@ -309,7 +309,7 @@ FROM Employee,
 	 Formalize,
 	 Loan
 WHERE MATCH(Employee-(Formalize)->Loan)
-AND Loan.LoanType = 'Èïîòå÷íûé'
+AND Loan.LoanType = 'Ð˜Ð¿Ð¾Ñ‚ÐµÑ‡Ð½Ñ‹Ð¹'
 
 SELECT Employee.Name,
        Bank.BankName
@@ -317,31 +317,93 @@ FROM Employee,
 WorkIn,
 Bank
 WHERE MATCH(Employee-(WorkIn)->Bank)
-AND Bank.BankName = 'ÎÀÎ "Ïàðèòåòáàíê"'
+AND Bank.BankName = 'ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº"'
 
 SELECT Bank1.BankName,
 Bank2.BankName as CooperateBank
 FROM Bank AS Bank1
-, Ñooperates
+, Ð¡ooperates
 , Bank as Bank2
-WHERE MATCH(Bank1-(Ñooperates)->Bank2)
-AND Bank1.BankName = 'ÎÀÎ "Ïàðèòåòáàíê"'
+WHERE MATCH(Bank1-(Ð¡ooperates)->Bank2)
+AND Bank1.BankName = 'ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº"'
 
---String_agg - ðàçäåëèòåëü, ÷òîáû êðàñèâî áûëî
+--String_agg - Ñ€Ð°Ð·Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÐºÑ€Ð°ÑÐ¸Ð²Ð¾ Ð±Ñ‹Ð»Ð¾
 SELECT Bank1.BankName,
 STRING_AGG(Bank2.BankName, '->') WITHIN GROUP (GRAPH PATH) AS Cooperates
 FROM Bank as Bank1
-, Ñooperates FOR PATH AS co--FOR PATH âñåãäà ïèøåì, êîãäà áóäåò èñïîëüçîâàòüñÿ òàáëèöà
+, Ð¡ooperates FOR PATH AS co--FOR PATH Ð²ÑÐµÐ³Ð´Ð° Ð¿Ð¸ÑˆÐµÐ¼, ÐºÐ¾Ð³Ð´Ð° Ð±ÑƒÐ´ÐµÑ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ð°
 , Bank FOR PATH AS Bank2
-WHERE MATCH(SHORTEST_PATH(Bank1(-(co)->Bank2){1,2}))-- {1,n} ïèøåì êîãäà íóæíî íàéòè ïóòè äî 2 øàãîâ
-AND Bank1.BankName = 'ÎÀÎ "Ïàðèòåòáàíê"'
---Shortest_Path - óêàçûâàåò êðàò÷àéøèé ïóòü ìåæäó óçëàìè
+WHERE MATCH(SHORTEST_PATH(Bank1(-(co)->Bank2){1,2}))-- {1,n} Ð¿Ð¸ÑˆÐµÐ¼ ÐºÐ¾Ð³Ð´Ð° Ð½ÑƒÐ¶Ð½Ð¾ Ð½Ð°Ð¹Ñ‚Ð¸ Ð¿ÑƒÑ‚Ð¸ Ð´Ð¾ 2 ÑˆÐ°Ð³Ð¾Ð²
+AND Bank1.BankName = 'ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº"'
+--Shortest_Path - ÑƒÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ ÐºÑ€Ð°Ñ‚Ñ‡Ð°Ð¹ÑˆÐ¸Ð¹ Ð¿ÑƒÑ‚ÑŒ Ð¼ÐµÐ¶Ð´Ñƒ ÑƒÐ·Ð»Ð°Ð¼Ð¸
 
 SELECT Bank1.BankName,
 LAST_VALUE(Bank2.BankName) WITHIN GROUP (GRAPH PATH) AS LastNode,
 COUNT(Bank2.BankName) WITHIN GROUP (GRAPH PATH) as Steps
 FROM Bank as Bank1
-, Ñooperates FOR PATH AS co--FOR PATH âñåãäà ïèøåì, êîãäà áóäåò èñïîëüçîâàòüñÿ òàáëèöà
+, Ð¡ooperates FOR PATH AS co--FOR PATH Ð²ÑÐµÐ³Ð´Ð° Ð¿Ð¸ÑˆÐµÐ¼, ÐºÐ¾Ð³Ð´Ð° Ð±ÑƒÐ´ÐµÑ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ð°
 , Bank FOR PATH AS Bank2
-WHERE MATCH(SHORTEST_PATH(Bank1(-(co)->Bank2)+))-- + ïèøåì êîãäà ïðîñòî íóæíî íàéòè âñå ïóòè ìàêñèìàëüíîé äëèíû
-AND Bank1.BankName = 'ÎÀÎ "Ïàðèòåòáàíê"'
+WHERE MATCH(SHORTEST_PATH(Bank1(-(co)->Bank2)+))-- + Ð¿Ð¸ÑˆÐµÐ¼ ÐºÐ¾Ð³Ð´Ð° Ð¿Ñ€Ð¾ÑÑ‚Ð¾ Ð½ÑƒÐ¶Ð½Ð¾ Ð½Ð°Ð¹Ñ‚Ð¸ Ð²ÑÐµ Ð¿ÑƒÑ‚Ð¸ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð¹ Ð´Ð»Ð¸Ð½Ñ‹
+AND Bank1.BankName = 'ÐžÐÐž "ÐŸÐ°Ñ€Ð¸Ñ‚ÐµÑ‚Ð±Ð°Ð½Ðº"'
+
+SELECT @@SERVERNAME
+
+-- Ð—Ð°Ð¿Ñ€Ð¾Ñ Ð´Ð»Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ "LivesIn"
+SELECT C.ClientID AS IdClient
+    , CONCAT(C.Name, ' ', C.Surname) AS Client
+    , CONCAT(N'Client',C.ClientID) AS [Client Image Name]
+    , CT.CityID AS IdCity
+    , CT.CityName AS City
+    , CONCAT(N'City',CT.CityID) AS [City Image Name]
+FROM Client AS C
+    , LivesIn AS L
+    , City AS CT
+WHERE MATCH(C-(L)->CT)
+
+-- Ð—Ð°Ð¿Ñ€Ð¾Ñ Ð´Ð»Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ "WorkIn"
+SELECT E.EmployeeID AS IdEmployee
+    , CONCAT(E.Name, ' ', E.Surname) AS Employee
+    , CONCAT(N'Employee',E.EmployeeID) AS [Employee Image Name]
+    , B.BankID AS IdBank
+    , B.BankName AS Bank
+    , CONCAT(N'Bank',B.BankID) AS [Bank Image Name]
+FROM Employee AS E
+    , WorkIn AS W
+    , Bank AS B
+WHERE MATCH(E-(W)->B)
+
+-- Ð—Ð°Ð¿Ñ€Ð¾Ñ Ð´Ð»Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ "Signs"
+SELECT C.ClientID AS IdClient
+    , CONCAT(C.Name, ' ', C.Surname) AS Client
+    , CONCAT(N'Client',C.ClientID) AS [Client Image Name]
+    , L.LoanID AS IdLoan
+    , L.LoanType AS Loan
+    , CONCAT(N'Loan',L.LoanID) AS [Loan Image Name]
+FROM Client AS C
+    , Signs AS S
+    , Loan AS L
+WHERE MATCH(C-(S)->L)
+
+-- Ð—Ð°Ð¿Ñ€Ð¾Ñ Ð´Ð»Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ "Formalize"
+SELECT E.EmployeeID AS IdEmployee
+    , CONCAT(E.Name, ' ', E.Surname) AS Employee
+    , CONCAT(N'Employee',E.EmployeeID) AS [Employee Image Name]
+    , L.LoanID AS IdLoan
+    , L.LoanType AS Loan
+    , CONCAT(N'Loan',L.LoanID) AS [Loan Image Name]
+FROM Employee AS E
+    , Formalize AS F
+    , Loan AS L
+WHERE MATCH(E-(F)->L)
+
+-- Ð—Ð°Ð¿Ñ€Ð¾Ñ Ð´Ð»Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ "Ð¡ooperates"
+SELECT B1.BankID AS IdFirst
+    , B1.BankName AS First
+    , CONCAT(N'Cooperates', B1.BankID) AS [First Image Name]
+    , B2.BankID AS IdSecond
+    , B2.BankName AS Second
+    , CONCAT(N'Cooperates', B2.BankID) AS [Second Image Name]
+FROM Bank AS B1
+    , Ð¡ooperates AS C
+    , Bank AS B2
+WHERE MATCH(B1-(C)->B2)
