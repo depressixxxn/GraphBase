@@ -7,6 +7,24 @@ GO
 USE GraphBank;
 GO
 
+CREATE TABLE [Client] (
+	ClientID int IDENTITY(1,1) NOT NULL,
+	Name nvarchar(30) NOT NULL,
+	Patronymic nvarchar(30),
+	Surname nvarchar(30) NOT NULL,
+	Telephone nvarchar(20) NOT NULL UNIQUE,
+	Address nvarchar(50) NOT NULL,
+	Salary money NOT NULL,
+	NameOwnership nvarchar(50) NOT NULL,
+	OwnershipType nvarchar(50) NOT NULL,
+	ContactPerson nvarchar(30) NOT NULL,
+  CONSTRAINT [PK_CLIENT] PRIMARY KEY CLUSTERED
+  (
+  [ClientID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+) AS Node
+GO
 
 CREATE TABLE [Employee] (
 	EmployeeID int IDENTITY(1,1) NOT NULL,
